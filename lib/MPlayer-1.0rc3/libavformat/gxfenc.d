@@ -1,0 +1,7 @@
+gxfenc.o: gxfenc.c ../libavutil/fifo.h ../libavutil/avutil.h \
+ ../libavutil/common.h ../libavutil/mem.h ../config.h \
+ ../libavutil/internal.h ../libavutil/timer.h ../libavutil/mathematics.h \
+ ../libavutil/rational.h ../libavutil/intfloat_readwrite.h \
+ ../libavutil/log.h ../libavutil/pixfmt.h avformat.h \
+ ../libavcodec/avcodec.h ../libavutil/avutil.h avio.h \
+ ../libavutil/common.h gxf.h riff.h audiointerleave.h

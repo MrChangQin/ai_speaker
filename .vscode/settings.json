@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "main.h": "c",
+        "types.h": "c",
+        "select.h": "c",
+        "time.h": "c"
+    }
+}
