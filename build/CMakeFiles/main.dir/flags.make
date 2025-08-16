@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -DDEBUG
 
-C_INCLUDES = -I/home/mei/Linux/workspace/ai_speaker/include
+C_INCLUDES = -I/home/mei/workspace/ai_speaker/include
 
 C_FLAGS = 
 

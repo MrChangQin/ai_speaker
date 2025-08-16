@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mei/Linux/workspace/ai_speaker
+CMAKE_SOURCE_DIR = /home/mei/workspace/ai_speaker
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mei/Linux/workspace/ai_speaker/build
+CMAKE_BINARY_DIR = /home/mei/workspace/ai_speaker/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mei/Linux/workspace/ai_speaker/build/CMakeFiles /home/mei/Linux/workspace/ai_speaker/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mei/workspace/ai_speaker/build/CMakeFiles /home/mei/workspace/ai_speaker/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mei/Linux/workspace/ai_speaker/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mei/workspace/ai_speaker/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,6 +129,54 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+src/device.o: src/device.c.o
+.PHONY : src/device.o
+
+# target to build an object file
+src/device.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/device.c.o
+.PHONY : src/device.c.o
+
+src/device.i: src/device.c.i
+.PHONY : src/device.i
+
+# target to preprocess a source file
+src/device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/device.c.i
+.PHONY : src/device.c.i
+
+src/device.s: src/device.c.s
+.PHONY : src/device.s
+
+# target to generate assembly for a file
+src/device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/device.c.s
+.PHONY : src/device.c.s
+
+src/link.o: src/link.c.o
+.PHONY : src/link.o
+
+# target to build an object file
+src/link.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/link.c.o
+.PHONY : src/link.c.o
+
+src/link.i: src/link.c.i
+.PHONY : src/link.i
+
+# target to preprocess a source file
+src/link.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/link.c.i
+.PHONY : src/link.c.i
+
+src/link.s: src/link.c.s
+.PHONY : src/link.s
+
+# target to generate assembly for a file
+src/link.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/link.c.s
+.PHONY : src/link.c.s
+
 src/main.o: src/main.c.o
 .PHONY : src/main.o
 
@@ -152,6 +200,30 @@ src/main.s: src/main.c.s
 src/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.c.s
 .PHONY : src/main.c.s
+
+src/player.o: src/player.c.o
+.PHONY : src/player.o
+
+# target to build an object file
+src/player.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/player.c.o
+.PHONY : src/player.c.o
+
+src/player.i: src/player.c.i
+.PHONY : src/player.i
+
+# target to preprocess a source file
+src/player.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/player.c.i
+.PHONY : src/player.c.i
+
+src/player.s: src/player.c.s
+.PHONY : src/player.s
+
+# target to generate assembly for a file
+src/player.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/player.c.s
+.PHONY : src/player.c.s
 
 src/select.o: src/select.c.o
 .PHONY : src/select.o
@@ -177,6 +249,30 @@ src/select.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/select.c.s
 .PHONY : src/select.c.s
 
+src/socket.o: src/socket.c.o
+.PHONY : src/socket.o
+
+# target to build an object file
+src/socket.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/socket.c.o
+.PHONY : src/socket.c.o
+
+src/socket.i: src/socket.c.i
+.PHONY : src/socket.i
+
+# target to preprocess a source file
+src/socket.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/socket.c.i
+.PHONY : src/socket.c.i
+
+src/socket.s: src/socket.c.s
+.PHONY : src/socket.s
+
+# target to generate assembly for a file
+src/socket.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/socket.c.s
+.PHONY : src/socket.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -186,12 +282,24 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... main"
+	@echo "... src/device.o"
+	@echo "... src/device.i"
+	@echo "... src/device.s"
+	@echo "... src/link.o"
+	@echo "... src/link.i"
+	@echo "... src/link.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/player.o"
+	@echo "... src/player.i"
+	@echo "... src/player.s"
 	@echo "... src/select.o"
 	@echo "... src/select.i"
 	@echo "... src/select.s"
+	@echo "... src/socket.o"
+	@echo "... src/socket.i"
+	@echo "... src/socket.s"
 .PHONY : help
 
 

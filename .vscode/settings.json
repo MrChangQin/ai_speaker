@@ -3,6 +3,23 @@
         "main.h": "c",
         "types.h": "c",
         "select.h": "c",
-        "time.h": "c"
-    }
+        "time.h": "c",
+        "device.h": "c",
+        "stat.h": "c",
+        "driver.h": "c",
+        "shm.h": "c",
+        "stdio.h": "c",
+        "player.h": "c",
+        "unistd.h": "c",
+        "cstdio": "c",
+        "link.h": "c",
+        "socket.h": "c",
+        "error.h": "c",
+        "errno.h": "c",
+        "signal.h": "c"
+    },
+
+    "files.exclude": {
+        "**/lib/MPlayer-1.0rc3": true,
+    }   
 }

@@ -8,8 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/mei/Linux/workspace/ai_speaker/src/main.c" "CMakeFiles/main.dir/src/main.c.o" "gcc" "CMakeFiles/main.dir/src/main.c.o.d"
-  "/home/mei/Linux/workspace/ai_speaker/src/select.c" "CMakeFiles/main.dir/src/select.c.o" "gcc" "CMakeFiles/main.dir/src/select.c.o.d"
+  "/home/mei/workspace/ai_speaker/src/device.c" "CMakeFiles/main.dir/src/device.c.o" "gcc" "CMakeFiles/main.dir/src/device.c.o.d"
+  "/home/mei/workspace/ai_speaker/src/link.c" "CMakeFiles/main.dir/src/link.c.o" "gcc" "CMakeFiles/main.dir/src/link.c.o.d"
+  "/home/mei/workspace/ai_speaker/src/main.c" "CMakeFiles/main.dir/src/main.c.o" "gcc" "CMakeFiles/main.dir/src/main.c.o.d"
+  "/home/mei/workspace/ai_speaker/src/player.c" "CMakeFiles/main.dir/src/player.c.o" "gcc" "CMakeFiles/main.dir/src/player.c.o.d"
+  "/home/mei/workspace/ai_speaker/src/select.c" "CMakeFiles/main.dir/src/select.c.o" "gcc" "CMakeFiles/main.dir/src/select.c.o.d"
+  "/home/mei/workspace/ai_speaker/src/socket.c" "CMakeFiles/main.dir/src/socket.c.o" "gcc" "CMakeFiles/main.dir/src/socket.c.o.d"
   )
 
 # Targets to which this target links.

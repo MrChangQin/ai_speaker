@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mei/Linux/workspace/ai_speaker
+CMAKE_SOURCE_DIR = /home/mei/workspace/ai_speaker
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mei/Linux/workspace/ai_speaker/build
+CMAKE_BINARY_DIR = /home/mei/workspace/ai_speaker/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/main.dir/depend.make
@@ -69,47 +69,111 @@ include CMakeFiles/main.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/main.dir/flags.make
 
+CMakeFiles/main.dir/src/device.c.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/device.c.o: ../src/device.c
+CMakeFiles/main.dir/src/device.c.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mei/workspace/ai_speaker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/main.dir/src/device.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/device.c.o -MF CMakeFiles/main.dir/src/device.c.o.d -o CMakeFiles/main.dir/src/device.c.o -c /home/mei/workspace/ai_speaker/src/device.c
+
+CMakeFiles/main.dir/src/device.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/src/device.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mei/workspace/ai_speaker/src/device.c > CMakeFiles/main.dir/src/device.c.i
+
+CMakeFiles/main.dir/src/device.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/src/device.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mei/workspace/ai_speaker/src/device.c -o CMakeFiles/main.dir/src/device.c.s
+
+CMakeFiles/main.dir/src/link.c.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/link.c.o: ../src/link.c
+CMakeFiles/main.dir/src/link.c.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mei/workspace/ai_speaker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/main.dir/src/link.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/link.c.o -MF CMakeFiles/main.dir/src/link.c.o.d -o CMakeFiles/main.dir/src/link.c.o -c /home/mei/workspace/ai_speaker/src/link.c
+
+CMakeFiles/main.dir/src/link.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/src/link.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mei/workspace/ai_speaker/src/link.c > CMakeFiles/main.dir/src/link.c.i
+
+CMakeFiles/main.dir/src/link.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/src/link.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mei/workspace/ai_speaker/src/link.c -o CMakeFiles/main.dir/src/link.c.s
+
 CMakeFiles/main.dir/src/main.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/main.c.o: ../src/main.c
 CMakeFiles/main.dir/src/main.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mei/Linux/workspace/ai_speaker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/main.dir/src/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/main.c.o -MF CMakeFiles/main.dir/src/main.c.o.d -o CMakeFiles/main.dir/src/main.c.o -c /home/mei/Linux/workspace/ai_speaker/src/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mei/workspace/ai_speaker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/main.dir/src/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/main.c.o -MF CMakeFiles/main.dir/src/main.c.o.d -o CMakeFiles/main.dir/src/main.c.o -c /home/mei/workspace/ai_speaker/src/main.c
 
 CMakeFiles/main.dir/src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/src/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mei/Linux/workspace/ai_speaker/src/main.c > CMakeFiles/main.dir/src/main.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mei/workspace/ai_speaker/src/main.c > CMakeFiles/main.dir/src/main.c.i
 
 CMakeFiles/main.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/src/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mei/Linux/workspace/ai_speaker/src/main.c -o CMakeFiles/main.dir/src/main.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mei/workspace/ai_speaker/src/main.c -o CMakeFiles/main.dir/src/main.c.s
+
+CMakeFiles/main.dir/src/player.c.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/player.c.o: ../src/player.c
+CMakeFiles/main.dir/src/player.c.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mei/workspace/ai_speaker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/main.dir/src/player.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/player.c.o -MF CMakeFiles/main.dir/src/player.c.o.d -o CMakeFiles/main.dir/src/player.c.o -c /home/mei/workspace/ai_speaker/src/player.c
+
+CMakeFiles/main.dir/src/player.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/src/player.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mei/workspace/ai_speaker/src/player.c > CMakeFiles/main.dir/src/player.c.i
+
+CMakeFiles/main.dir/src/player.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/src/player.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mei/workspace/ai_speaker/src/player.c -o CMakeFiles/main.dir/src/player.c.s
 
 CMakeFiles/main.dir/src/select.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/select.c.o: ../src/select.c
 CMakeFiles/main.dir/src/select.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mei/Linux/workspace/ai_speaker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/main.dir/src/select.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/select.c.o -MF CMakeFiles/main.dir/src/select.c.o.d -o CMakeFiles/main.dir/src/select.c.o -c /home/mei/Linux/workspace/ai_speaker/src/select.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mei/workspace/ai_speaker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/main.dir/src/select.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/select.c.o -MF CMakeFiles/main.dir/src/select.c.o.d -o CMakeFiles/main.dir/src/select.c.o -c /home/mei/workspace/ai_speaker/src/select.c
 
 CMakeFiles/main.dir/src/select.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/src/select.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mei/Linux/workspace/ai_speaker/src/select.c > CMakeFiles/main.dir/src/select.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mei/workspace/ai_speaker/src/select.c > CMakeFiles/main.dir/src/select.c.i
 
 CMakeFiles/main.dir/src/select.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/src/select.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mei/Linux/workspace/ai_speaker/src/select.c -o CMakeFiles/main.dir/src/select.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mei/workspace/ai_speaker/src/select.c -o CMakeFiles/main.dir/src/select.c.s
+
+CMakeFiles/main.dir/src/socket.c.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/socket.c.o: ../src/socket.c
+CMakeFiles/main.dir/src/socket.c.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mei/workspace/ai_speaker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/main.dir/src/socket.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/socket.c.o -MF CMakeFiles/main.dir/src/socket.c.o.d -o CMakeFiles/main.dir/src/socket.c.o -c /home/mei/workspace/ai_speaker/src/socket.c
+
+CMakeFiles/main.dir/src/socket.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/src/socket.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mei/workspace/ai_speaker/src/socket.c > CMakeFiles/main.dir/src/socket.c.i
+
+CMakeFiles/main.dir/src/socket.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/src/socket.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mei/workspace/ai_speaker/src/socket.c -o CMakeFiles/main.dir/src/socket.c.s
 
 # Object files for target main
 main_OBJECTS = \
+"CMakeFiles/main.dir/src/device.c.o" \
+"CMakeFiles/main.dir/src/link.c.o" \
 "CMakeFiles/main.dir/src/main.c.o" \
-"CMakeFiles/main.dir/src/select.c.o"
+"CMakeFiles/main.dir/src/player.c.o" \
+"CMakeFiles/main.dir/src/select.c.o" \
+"CMakeFiles/main.dir/src/socket.c.o"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
+../bin/main: CMakeFiles/main.dir/src/device.c.o
+../bin/main: CMakeFiles/main.dir/src/link.c.o
 ../bin/main: CMakeFiles/main.dir/src/main.c.o
+../bin/main: CMakeFiles/main.dir/src/player.c.o
 ../bin/main: CMakeFiles/main.dir/src/select.c.o
+../bin/main: CMakeFiles/main.dir/src/socket.c.o
 ../bin/main: CMakeFiles/main.dir/build.make
 ../bin/main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mei/Linux/workspace/ai_speaker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable ../bin/main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mei/workspace/ai_speaker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable ../bin/main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -121,6 +185,6 @@ CMakeFiles/main.dir/clean:
 .PHONY : CMakeFiles/main.dir/clean
 
 CMakeFiles/main.dir/depend:
-	cd /home/mei/Linux/workspace/ai_speaker/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mei/Linux/workspace/ai_speaker /home/mei/Linux/workspace/ai_speaker /home/mei/Linux/workspace/ai_speaker/build /home/mei/Linux/workspace/ai_speaker/build /home/mei/Linux/workspace/ai_speaker/build/CMakeFiles/main.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mei/workspace/ai_speaker/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mei/workspace/ai_speaker /home/mei/workspace/ai_speaker /home/mei/workspace/ai_speaker/build /home/mei/workspace/ai_speaker/build /home/mei/workspace/ai_speaker/build/CMakeFiles/main.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/main.dir/depend
 

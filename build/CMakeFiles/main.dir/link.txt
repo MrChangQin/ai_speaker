@@ -1,1 +1,1 @@
-/usr/bin/cc CMakeFiles/main.dir/src/main.c.o CMakeFiles/main.dir/src/select.c.o -o ../bin/main 
+/usr/bin/cc CMakeFiles/main.dir/src/device.c.o CMakeFiles/main.dir/src/link.c.o CMakeFiles/main.dir/src/main.c.o CMakeFiles/main.dir/src/player.c.o CMakeFiles/main.dir/src/select.c.o CMakeFiles/main.dir/src/socket.c.o -o ../bin/main 

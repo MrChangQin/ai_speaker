@@ -1,6 +1,9 @@
+#!/bin/sh
+
 # build project
 echo -e "\033[0;35mbuilding project!!!\033[0m"
-cd build || exit
+mkdir -p build  # 创建build目录（如果不存在）
+cd build
 cmake ..
 make
 echo -e "\033[0;35mbuild finished!!!\033[0m"

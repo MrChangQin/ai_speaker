@@ -10,7 +10,10 @@
 #include <stdlib.h>
 
 #include "select.h"
-#include "driver.h"
+#include "device.h"
+#include "player.h"
+#include "link.h"
+#include "socket.h"
 
 
 #endif

@@ -1,4 +1,4 @@
-# Install script for directory: /home/mei/Linux/workspace/ai_speaker
+# Install script for directory: /home/mei/workspace/ai_speaker
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/mei/Linux/workspace/ai_speaker/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/mei/workspace/ai_speaker/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
