@@ -13,7 +13,8 @@
 #include <signal.h>
 #include <stdio.h>
 #include <errno.h>
-
+#include <json/json.h>
+#include <player.h>
 
 
 #define PORT        8000
@@ -21,5 +22,9 @@
 
 
 int init_socket(void);
+void socket_send_data(struct json_object *obj);
+void socket_recv_data(char *msg);
+void send_info2server(int sig);
+
 
 #endif // !1

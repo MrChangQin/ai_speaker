@@ -31,12 +31,18 @@ int main(int argc, char *argv[])
         return -1;
     }
 
-    // 5. 初始化socket
+    // 5. 初始化socket（TCP）
     if (init_socket() == -1) {
         printf("init_socket error\n");
         return -1;
     }
+    printf("server start...\n");
 
+    // 6. 获取音乐
+    get_music();
+    // traverse_link();
+
+    m_select();
 
 
     return 0;

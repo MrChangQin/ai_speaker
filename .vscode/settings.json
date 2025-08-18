@@ -16,10 +16,16 @@
         "socket.h": "c",
         "error.h": "c",
         "errno.h": "c",
-        "signal.h": "c"
+        "signal.h": "c",
+        "*.rh": "c",
+        "locking.h": "c",
+        "stdlib.h": "c"
     },
 
     "files.exclude": {
         "**/lib/MPlayer-1.0rc3": true,
-    }   
+        "**/lib/json-c": true,
+    },
+    "trae.tab.enableRename": false,
+    "trae.tab.enableAutoImport": false
 }

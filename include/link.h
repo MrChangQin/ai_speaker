@@ -9,6 +9,8 @@
 #include <stdio.h>
 #include <errno.h>
 #include <stdlib.h>
+#include <player.h>
+
 
 
 typedef struct Node {
@@ -20,5 +22,9 @@ typedef struct Node {
 
 
 int link_init(void);
+void create_link(const char *s);
+int insert_link(const char *music_name);
+void traverse_link();
+void find_next_music(char *cur, int mode, char *next_music);
 
 #endif
