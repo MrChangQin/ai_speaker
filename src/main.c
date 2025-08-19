@@ -7,7 +7,7 @@ Node *head = NULL; // 链表头
 
 int main(int argc, char *argv[])
 {
-    // 清理共享内存
+    // 0. 清理共享内存
     system("../init.sh");
 
     // 1. select初始化
@@ -39,12 +39,13 @@ int main(int argc, char *argv[])
     printf("server start...\n");
 
     // 6. 获取音乐
-    get_music();
-    // traverse_link();
+    get_music("random");
 
+    // 7. 处理信号
+    signal(SIGUSR1, update_music);
+
+    // 8. 菜单
     m_select();
 
-
     return 0;
-
 }

@@ -1,6 +1,6 @@
 #include "link.h"
 
-
+extern int g_start_flag;
 extern Node *head;
 
 int link_init(void)
@@ -66,24 +66,97 @@ void traverse_link() {
     printf("\n");
 }
 
-void find_next_music(char *cur, int mode, char *next_music) {
+void clear_link() {
+    Node *p = head->next;
+    while (p != NULL) {
+        head->next = p->next;
+        free(p);
+        p = head->next;
+    }
+}
+
+void update_music() {
+    g_start_flag = 0;
+
+    // 回收子进程
+    Shm shm;
+    get_shm(&shm);
+    int status;
+    waitpid(shm.child_pid, &status, 0)
+
+    char singer[128] = {0};
+    get_singer(singer);
+
+    clear_link();
+
+    // 请求新的歌曲
+    get_music(singer);
+
+    // 开始播放
+    start_play();
+}
+
+void get_singer(char *singer) {
+    if (head->next == NULL)
+        return;
+
+    char *begin = head->next->music_name;
+    char *p = begin;
+    while (*p != '/')
+    {
+        p++;
+    }
+    strncpy(singer, begin, p - begin);
+}
+
+/*
+返回
+*/
+int find_next_music(char *cur, int mode, char *next_music) {
     Node *p = head->next;
     while (p) {
-        if (strstr(p->music_name, cur) == NULL) {
-            p = p->next;
+        if (strstr(p->music_name, cur) != NULL) {
+            break;
         }
+        p = p->next;
     }
     // 找到当前音乐的链表节点p
     if (mode == CIRCLE) { 
         strcpy(next_music, p->music_name);
+        return 0; // 循环播放
     }
     else if (mode == SEQUENCE) { 
-        p = p->next;
-        if (p == NULL) {
-            strcpy(next_music, head->next->music_name);
+        if (p->next != NULL) {
+            strcpy(next_music, p->next->music_name);
+            return 0; // 找到下一曲
         }
         else {
-            strcpy(next_music, p->music_name);
+            return -1; // 未找到下一曲
         }
     }
 }
+
+void find_prior_music(char *cur, char *prior_music) {
+    if (cur == NULL || prior_music == NULL) {
+        return;
+    }
+
+    Node *p = head->next;
+    if (strstr(p->music_name, cur)) {
+        strcpy(prior_music, p->music_name);
+        return;
+    }
+
+    p = p->next;
+    while (p)
+    {
+        if (strstr(p->music_name, cur)) {
+            strcpy(prior_music, p->prior->music_name);
+            return;
+        }
+        p = p->next;
+    }
+
+    printf("未找到上一曲！\n");
+}
+

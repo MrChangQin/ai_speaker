@@ -89,6 +89,12 @@ int init_socket(void) {
             sleep(1);
             continue;
         }
+
+#ifdef ARM
+        // 蜂鸣器0.5秒提示
+        start_buzzer();
+#endif
+
         // 连接成功
         g_maxfd = (g_maxfd < g_socket_fd) ? g_socket_fd : g_maxfd;
         FD_SET(g_socket_fd, &READSET);  // 添加到可读集合中

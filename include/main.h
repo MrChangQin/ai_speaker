@@ -8,12 +8,14 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <signal.h>
 
 #include "select.h"
 #include "device.h"
 #include "player.h"
 #include "link.h"
 #include "socket.h"
+
 
 
 #endif

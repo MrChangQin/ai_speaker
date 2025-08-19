@@ -16,6 +16,7 @@
 #include <json/json.h>
 #include <player.h>
 
+#include <device.h>
 
 #define PORT        8000
 #define IP          "127.0.0.1"

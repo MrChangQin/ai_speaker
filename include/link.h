@@ -21,10 +21,14 @@ typedef struct Node {
 } Node;
 
 
-int link_init(void);
+int  link_init(void);
 void create_link(const char *s);
-int insert_link(const char *music_name);
+int  insert_link(const char *music_name);
 void traverse_link();
-void find_next_music(char *cur, int mode, char *next_music);
+void clear_link();
+void update_music();
+void get_singer(char *singer);
+int find_next_music(char *cur, int mode, char *next_music);
+void find_prior_music(char *cur, char *prior_music);
 
 #endif

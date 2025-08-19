@@ -9,10 +9,14 @@
 #include <sys/select.h>
 #include <errno.h>
 #include <unistd.h>
-#include <time.h>
+#include <sys/time.h>
+#include <termios.h>
+#include <string.h>
 
 
 int init_dirver(void);
-
+void start_buzzer();
+int get_key_id();
+int init_serial();
 
 #endif

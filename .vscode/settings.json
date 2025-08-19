@@ -19,7 +19,8 @@
         "signal.h": "c",
         "*.rh": "c",
         "locking.h": "c",
-        "stdlib.h": "c"
+        "stdlib.h": "c",
+        "fcntl.h": "c"
     },
 
     "files.exclude": {
