@@ -21,6 +21,7 @@ int init_dirver(void) {
     }
     g_maxfd = (g_maxfd < g_mixer_fd) ? g_mixer_fd : g_maxfd;
 
+#ifdef ARM
     // 初始化按键设备
     g_buttons_fd = open("/dev/buttons", O_RDONLY);
     if (g_buttons_fd == -1) {
@@ -37,6 +38,12 @@ int init_dirver(void) {
         perror("open serial");
         return -1;
     }
+
+    if (init_serial() == -1) {
+        perror("init serial");
+        return -1;
+    }
+
     g_maxfd = (g_maxfd < g_serial_fd) ? g_serial_fd : g_maxfd;
     FD_SET(g_serial_fd, &READSET);
     
@@ -48,8 +55,56 @@ int init_dirver(void) {
         return -1;
     }
     g_maxfd = (g_maxfd < g_buzzer_fd) ? g_buzzer_fd : g_maxfd;
-    FD_SET(g_buzzer_fd, &READSET);
+#endif // DEBUG
 
     return 0;
+}
 
+void start_buzzer() {
+    int freq = 1000;
+    int ret = ioctl(g_buzzer_fd, 1, freq);
+    if (ret == -1) {
+        perror("ioctl buzzer");
+        return;
+    }
+
+    usleep(500000);
+    
+    ret = ioctl(g_buzzer_fd, 0);
+    if (ret == -1) { 
+        perror("ioctl buzzer");
+    }
+}
+
+int get_key_id() {
+    char buttons[6] = {'0', '0', '0', '0', '0', '0'};
+    char cur_buttons[6] = {0};
+
+    ssize_t size = read(g_buttons_fd, cur_buttons, 6);
+    if (size == -1) {
+        perror("read buttons");
+        return -1;
+    }
+
+    int i;
+    for (i = 0; i < 6; i++) {
+        if (buttons[i] != cur_buttons[i]) {
+            return i + 1;
+        }
+    }
+    return -1;
+}
+
+int init_serial() {
+
+    struct termios TtyAttr;
+    memset(&TtyAttr, 0, sizeof(struct termios));
+    TtyAttr.c_iflag = IGNPAR;
+    TtyAttr.c_cflag = B115200 | HUPCL | CS8 | CREAD | CLOCAL;
+    TtyAttr.c_cc[VMIN] = 1;
+
+    if (tcsetattr(g_serial_fd, TCSANOW, &TtyAttr) == -1) {
+        perror("tcsetattr");
+        return -1;
+    }
 }

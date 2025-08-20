@@ -11,3 +11,9 @@ id=`ipcs -m | grep 0x000004d2 | awk '{print $2}'`
 if [ ! -z $id ]; then
     ipcrm -m $id
 fi
+
+
+file="cmd_fifo"
+
+rm -rf $file
+mkfifo $file
