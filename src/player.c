@@ -78,16 +78,19 @@ void get_music(const char *singer) {
     // 形成链表
     create_link(msg);
 
+    // 上传音乐数据 （为了更新APP）
+    upload_music_list();
+
     // 释放json对象
     json_object_put(req);
 }
 
-void start_play() {
+int start_play() {
     if (g_start_flag == 1) {  // 播放已经开始
-        return;
+        return -1;
     }
     if (head->next == NULL) {  //播放列表为空
-        return;
+        return -1;
     }
 
     char music_name[32] = {0};
@@ -102,6 +105,8 @@ void start_play() {
 
     g_start_flag = 1;
     play_music(music_name);
+
+    return 0;
 }
 
 void write_fifo(const char *cmd) { 
@@ -118,6 +123,11 @@ void write_fifo(const char *cmd) {
 }
 
 void stop_play() {
+
+    if (g_start_flag == 0) {
+        return;
+    }
+
     // 通知子进程
     Shm shm;
     get_shm(&shm);
@@ -414,7 +424,7 @@ void child_process(const char *music_name) {  // 创建孙进程播放音乐
 
 #ifdef ARM
             execv("/bin/mplayer", arg); // 开发板上的mplayer
-#elif  x86
+#else
             execv("/usr/local/bin/mplayer", arg); // 虚拟机上的mplayer
 #endif
         }

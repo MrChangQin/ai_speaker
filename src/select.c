@@ -112,7 +112,6 @@ int parse_message(char *msg, char *cmd) {
 }
 
 void select_read_socket() {
-
     char buf[1024] = {0};
     char cmd[128] = {0};
 
@@ -122,6 +121,36 @@ void select_read_socket() {
     }
     else {
         printf("cmd = %s\n", cmd);
+    }
+    if (!strcmp(cmd, "app_start")) {
+        socket_start_play();
+    }
+    else if (!strcmp(cmd, "app_stop")) {
+        socket_stop_play();
+    }
+    else if (!strcmp(cmd, "app_suspend")) {
+        socket_suspend_play();
+    }
+    else if (!strcmp(cmd, "app_continue")) {
+        socket_continue_play();
+    }
+    else if (!strcmp(cmd, "app_prior")) {
+        socket_prior_play();
+    }
+    else if (!strcmp(cmd, "app_next")) {
+        socket_next_play();
+    }
+    else if (!strcmp(cmd, "app_voice_up")) {
+        socket_voice_up();
+    }
+    else if (!strcmp(cmd, "app_voice_down")) {
+        socket_voice_down();
+    }
+    else if (!strcmp(cmd, "app_circle")) {
+        socket_circle_play();
+    }
+    else if (!strcmp(cmd, "app_sequence")) {
+        socket_sequence_play();
     }
 }
 

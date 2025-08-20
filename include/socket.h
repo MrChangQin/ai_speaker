@@ -22,10 +22,20 @@
 #define IP          "127.0.0.1"
 
 
-int init_socket(void);
+int init_socket();
 void socket_send_data(struct json_object *obj);
 void socket_recv_data(char *msg);
 void send_info2server(int sig);
-
+void upload_music_list();
+void socket_start_play();
+void socket_stop_play();
+void socket_suspend_play();
+void socket_continue_play();
+void socket_prior_play();
+void socket_next_play();
+void socket_voice_up();
+void socket_voice_down();
+void socket_circle_play();
+void socket_sequence_play();
 
 #endif // !1

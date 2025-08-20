@@ -44,7 +44,7 @@ void grand_set_shm(Shm shm);
 
 void get_volume(int *v);
 void get_music(const char *singer);
-void start_play();
+int start_play();
 void stop_play();
 void suspend_play();
 void continue_play();

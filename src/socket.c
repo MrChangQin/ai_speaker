@@ -3,6 +3,8 @@
 
 extern int g_maxfd;
 extern fd_set READSET;
+extern Node *head; // 音乐链表头
+
 int g_socket_fd = 0;
 
 
@@ -65,7 +67,148 @@ void socket_recv_data(char *msg) {
     printf("--MSG : %s", msg);
 }
 
-int init_socket(void) {
+void upload_music_list() {
+    struct json_object *obj = json_object_new_object();
+    json_object_object_add(obj, "cmd", json_object_new_string("upload_music"));
+
+    // 获取音乐列表
+    struct json_object *array = json_object_new_array();
+    Node *current = head->next;
+    while (current != NULL) {
+        json_object_array_add(array, json_object_new_string(current->music_name));
+        current = current->next;
+    }
+    json_object_object_add(obj, "music", array);
+
+    // 发送到服务器
+    socket_send_data(obj);
+    // 释放
+    json_object_put(obj);
+    json_object_put(array);
+}
+
+void socket_start_play() {
+    struct json_object *obj = json_object_new_object();
+    json_object_object_add(obj, "cmd", json_object_new_string("app_start_reply"));
+
+    if (start_play() == -1) {
+        json_object_object_add(obj, "result", json_object_new_string("failure"));
+    }
+    else {
+        json_object_object_add(obj, "result", json_object_new_string("success"));
+    }
+
+    socket_send_data(obj);
+    json_object_put(obj);
+}
+
+void socket_stop_play() {
+    struct json_object *obj = json_object_new_object();
+    json_object_object_add(obj, "cmd", json_object_new_string("app_stop_reply"));
+    stop_play();
+    json_object_object_add(obj, "result", json_object_new_string("success"));
+
+    socket_send_data(obj);
+    json_object_put(obj);
+}
+
+void socket_suspend_play() {
+    struct json_object *obj = json_object_new_object();
+    json_object_object_add(obj, "cmd", json_object_new_string("app_suspend_reply"));
+    suspend_play();
+    json_object_object_add(obj, "result", json_object_new_string("success"));
+
+    socket_send_data(obj);
+    json_object_put(obj);
+}
+
+void socket_continue_play() {
+    struct json_object *obj = json_object_new_object();
+    json_object_object_add(obj, "cmd", json_object_new_string("app_continue_reply"));
+    continue_play();
+    json_object_object_add(obj, "result", json_object_new_string("success"));
+
+    socket_send_data(obj);
+    json_object_put(obj);
+}
+
+void socket_prior_play() {
+    struct json_object *obj = json_object_new_object();
+    json_object_object_add(obj, "cmd", json_object_new_string("app_prior_reply"));
+    prior_play();  // prior_play在主进程执行，更新了共享内存
+    json_object_object_add(obj, "result", json_object_new_string("success"));
+
+    Shm shm;  // 获取当前音乐
+    get_shm(&shm);
+    json_object_object_add(obj, "music", json_object_new_string(shm.cur_music));
+
+    socket_send_data(obj);
+    json_object_put(obj);
+}
+
+void socket_next_play() {
+    struct json_object *obj = json_object_new_object();
+    json_object_object_add(obj, "cmd", json_object_new_string("app_next_reply"));
+    next_play();  // next_play也在主进程执行，更新了共享内存
+    json_object_object_add(obj, "result", json_object_new_string("success"));
+
+    Shm shm;  // 获取当前音乐
+    get_shm(&shm);
+    json_object_object_add(obj, "music", json_object_new_string(shm.cur_music));
+
+    socket_send_data(obj);
+    json_object_put(obj);
+}
+
+void socket_voice_up() {
+    struct json_object *obj = json_object_new_object();
+    json_object_object_add(obj, "cmd", json_object_new_string("app_voice_up_reply"));
+    voice_up();
+    json_object_object_add(obj, "result", json_object_new_string("success"));
+
+    int volume;
+    get_volume(&volume);
+    json_object_object_add(obj, "voice", json_object_new_int(volume));
+
+    socket_send_data(obj);
+    json_object_put(obj);
+}
+
+void socket_voice_down() {
+    struct json_object *obj = json_object_new_object();
+    json_object_object_add(obj, "cmd", json_object_new_string("app_voice_down_reply"));
+    voice_down();
+    json_object_object_add(obj, "result", json_object_new_string("success"));
+
+    int volume;
+    get_volume(&volume);
+    json_object_object_add(obj, "voice", json_object_new_int(volume));
+
+    socket_send_data(obj);
+    json_object_put(obj);
+}
+
+void socket_circle_play() {
+    struct json_object *obj = json_object_new_object();
+    json_object_object_add(obj, "cmd", json_object_new_string("app_circle_reply"));
+    circle_play();
+    json_object_object_add(obj, "result", json_object_new_string("success"));
+
+    socket_send_data(obj);
+    json_object_put(obj);
+}
+
+void socket_sequence_play() {
+    struct json_object *obj = json_object_new_object();
+    json_object_object_add(obj, "cmd", json_object_new_string("app_sequence_reply"));
+    sequence_play();
+    json_object_object_add(obj, "result", json_object_new_string("success"));
+
+    socket_send_data(obj);
+    json_object_put(obj);
+}
+
+int init_socket() {
     int count = 50;
 
     // 创建套接字
