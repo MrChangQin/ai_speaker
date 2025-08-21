@@ -31,6 +31,7 @@ public:
     void player_update_list(struct bufferevent *bev, Json::Value &val, Server *server);
     void player_app_update_list(struct bufferevent *bev, Json::Value &val);
     void player_upload_music(struct bufferevent *bev, Json::Value &val, Server *server);
+    void player_get_music(struct bufferevent *bev, Json::Value &val, Server *server);
     void player_option(struct bufferevent *bev, Json::Value &val, Server *server);
     void player_reply_option(struct bufferevent *bev, Json::Value &val, Server *server);
     void player_offline(struct bufferevent *bev);

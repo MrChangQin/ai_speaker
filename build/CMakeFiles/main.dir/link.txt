@@ -1,0 +1,1 @@
+arm-linux-gnueabihf-gcc -g -static CMakeFiles/main.dir/src/device.c.o CMakeFiles/main.dir/src/link.c.o CMakeFiles/main.dir/src/main.c.o CMakeFiles/main.dir/src/player.c.o CMakeFiles/main.dir/src/select.c.o CMakeFiles/main.dir/src/socket.c.o -o ../bin/main   -L/home/json_arm_install/lib  -Wl,-rpath,/home/json_arm_install/lib -ljson 

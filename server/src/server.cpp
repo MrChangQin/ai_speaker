@@ -305,6 +305,9 @@ void Server::server_player_handle(struct bufferevent *bev, Json::Value &val) {
     else if (val["cmd"] == "upload_music") {
         m_player->player_upload_music(bev, val, this);
     }
+    else if (val["cmd"] == "app_get_music") {
+        m_player->player_get_music(bev, val, this);
+    }
     else if (val["cmd"] == "app_start"    || val["cmd"] == "app_stop"       || 
              val["cmd"] == "app_suspend"  || val["cmd"] == "app_continue"   || 
              val["cmd"] == "app_prior"    || val["cmd"] == "app_next"       ||

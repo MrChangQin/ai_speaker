@@ -19,7 +19,8 @@
     "cur_music": "1.mp3",
     "volume": 90,
     "mode": "circle",
-    "deviceid": "0001"
+    "deviceid": "0001",
+    "status":"stop"
 }
 ```
 - **参数说明**:
@@ -28,6 +29,7 @@
   - `volume`: 音量大小(0-100)
   - `mode`: 播放模式，如 "circle"（循环播放）
   - `deviceid`: 设备ID
+  - `status`: 播放状态，如 "stop/start/suspend"
 
 ### 2. APP上报数据
 - **命令**: `app_info`
@@ -544,6 +546,20 @@
 ```
 - **参数说明**:
   - `cmd`: 固定值 "app_offline"
+
+
+### 19. APP请求音乐列表
+
+#### APP发起请求
+- **请求格式**:
+```json
+{
+    "cmd": "app_get_music",
+}
+```
+- **参数说明**:
+  - `cmd`: 固定值 "app_get_music"
+
 
 ## 更新记录
 

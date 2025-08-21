@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/admin/workspace/ai_speaker/build",
+  "command": "arm-linux-gnueabihf-gcc -DARM -I/home/admin/workspace/ai_speaker/include -I/home/json_arm_install/include -g -o CMakeFiles/main.dir/src/device.c.o -c /home/admin/workspace/ai_speaker/src/device.c",
+  "file": "/home/admin/workspace/ai_speaker/src/device.c"
+},
+{
+  "directory": "/home/admin/workspace/ai_speaker/build",
+  "command": "arm-linux-gnueabihf-gcc -DARM -I/home/admin/workspace/ai_speaker/include -I/home/json_arm_install/include -g -o CMakeFiles/main.dir/src/link.c.o -c /home/admin/workspace/ai_speaker/src/link.c",
+  "file": "/home/admin/workspace/ai_speaker/src/link.c"
+},
+{
+  "directory": "/home/admin/workspace/ai_speaker/build",
+  "command": "arm-linux-gnueabihf-gcc -DARM -I/home/admin/workspace/ai_speaker/include -I/home/json_arm_install/include -g -o CMakeFiles/main.dir/src/main.c.o -c /home/admin/workspace/ai_speaker/src/main.c",
+  "file": "/home/admin/workspace/ai_speaker/src/main.c"
+},
+{
+  "directory": "/home/admin/workspace/ai_speaker/build",
+  "command": "arm-linux-gnueabihf-gcc -DARM -I/home/admin/workspace/ai_speaker/include -I/home/json_arm_install/include -g -o CMakeFiles/main.dir/src/player.c.o -c /home/admin/workspace/ai_speaker/src/player.c",
+  "file": "/home/admin/workspace/ai_speaker/src/player.c"
+},
+{
+  "directory": "/home/admin/workspace/ai_speaker/build",
+  "command": "arm-linux-gnueabihf-gcc -DARM -I/home/admin/workspace/ai_speaker/include -I/home/json_arm_install/include -g -o CMakeFiles/main.dir/src/select.c.o -c /home/admin/workspace/ai_speaker/src/select.c",
+  "file": "/home/admin/workspace/ai_speaker/src/select.c"
+},
+{
+  "directory": "/home/admin/workspace/ai_speaker/build",
+  "command": "arm-linux-gnueabihf-gcc -DARM -I/home/admin/workspace/ai_speaker/include -I/home/json_arm_install/include -g -o CMakeFiles/main.dir/src/socket.c.o -c /home/admin/workspace/ai_speaker/src/socket.c",
+  "file": "/home/admin/workspace/ai_speaker/src/socket.c"
+}
+]

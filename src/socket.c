@@ -1,12 +1,15 @@
 #include "socket.h"
 
 
+#define DEVICE_ID   "0001"   // 每个音箱的硬编码MAC
+
 extern int g_maxfd;
 extern fd_set READSET;
 extern Node *head; // 音乐链表头
+extern int g_start_flag;
+extern int g_suspend_flag;
 
 int g_socket_fd = 0;
-
 
 // 定时发送json信息
 void send_info2server(int sig) {
@@ -22,8 +25,17 @@ void send_info2server(int sig) {
     int volume;
     get_volume(&volume);
     json_object_object_add(SendObj, "volume", json_object_new_int(volume));
+    json_object_object_add(SendObj, "deviceid", json_object_new_string(DEVICE_ID));
 
-    json_object_object_add(SendObj, "deviceid", json_object_new_string("0001"));
+    if (g_start_flag == 0) {  // 未开始播放
+        json_object_object_add(SendObj, "status", json_object_new_string("stop"));
+    }
+    else if (g_start_flag == 1 && g_suspend_flag == 1) { // 已经开始播放但是暂停
+        json_object_object_add(SendObj, "status", json_object_new_string("suspend"));
+    }
+    else if (g_start_flag == 1 && g_suspend_flag == 0) { // 已经开始播放且没有暂停
+        json_object_object_add(SendObj, "status", json_object_new_string("start"));
+    }
 
     // 发送到服务器
     socket_send_data(SendObj);

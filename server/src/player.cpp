@@ -67,6 +67,15 @@ void Player::player_upload_music(bufferevent *bev, Json::Value &val, Server *ser
     }
 }
 
+void Player::player_get_music(bufferevent *bev, Json::Value &val, Server *server) {
+    for (auto it = info->begin(); it != info->end(); ++it) {
+        if (it->a_bev == bev) {
+            server->server_send_data(it->d_bev, val);
+            break;
+        }
+    } 
+}
+
 void Player::player_option(bufferevent *bev, Json::Value &val, Server *server) {
     // 判断音箱是否在线
     for (auto it = info->begin(); it != info->end(); ++it) {

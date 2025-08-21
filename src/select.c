@@ -152,6 +152,9 @@ void select_read_socket() {
     else if (!strcmp(cmd, "app_sequence")) {
         socket_sequence_play();
     }
+    else if (!strcmp(cmd, "app_get_music")) {
+        upload_music_list();
+    }
 }
 
 void select_read_serial() {

@@ -1,0 +1,3 @@
+/home/admin/workspace/ai_speaker/build/CMakeFiles/main.dir
+/home/admin/workspace/ai_speaker/build/CMakeFiles/edit_cache.dir
+/home/admin/workspace/ai_speaker/build/CMakeFiles/rebuild_cache.dir
