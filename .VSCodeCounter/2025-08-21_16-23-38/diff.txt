@@ -1,0 +1,69 @@
+Date : 2025-08-21 16:23:38
+Directory : /home/admin/workspace/ai_speaker
+Total : 23 files,  -4251 codes, -189 comments, -521 blanks, all -4961 lines
+
+Languages
++-------------+------------+------------+------------+------------+------------+
+| language    | files      | code       | comment    | blank      | total      |
++-------------+------------+------------+------------+------------+------------+
+| TypeScript  |          1 |         -2 |          0 |         -1 |         -3 |
+| Makefile    |          1 |       -177 |        -63 |        -77 |       -317 |
+| CMake       |          8 |       -268 |          0 |        -72 |       -340 |
+| CMake Cache |          1 |       -313 |          0 |        -71 |       -384 |
+| Log         |          1 |       -381 |          0 |        -31 |       -412 |
+| C++         |          1 |       -598 |        -64 |       -130 |       -792 |
+| C           |          1 |       -610 |        -62 |       -132 |       -804 |
+| JSON        |          9 |     -1,902 |          0 |         -7 |     -1,909 |
++-------------+------------+------------+------------+------------+------------+
+
+Directories
++--------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                   | files      | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                      |         23 |     -4,251 |       -189 |       -521 |     -4,961 |
+| build                                                                                                  |         23 |     -4,251 |       -189 |       -521 |     -4,961 |
+| build (Files)                                                                                          |          4 |       -568 |        -63 |       -157 |       -788 |
+| build/.cmake                                                                                           |          8 |     -1,870 |          0 |         -7 |     -1,877 |
+| build/.cmake/api                                                                                       |          8 |     -1,870 |          0 |         -7 |     -1,877 |
+| build/.cmake/api/v1                                                                                    |          8 |     -1,870 |          0 |         -7 |     -1,877 |
+| build/.cmake/api/v1/query                                                                              |          1 |         -1 |          0 |          0 |         -1 |
+| build/.cmake/api/v1/query/client-vscode                                                                |          1 |         -1 |          0 |          0 |         -1 |
+| build/.cmake/api/v1/reply                                                                              |          7 |     -1,869 |          0 |         -7 |     -1,876 |
+| build/CMakeFiles                                                                                       |         11 |     -1,813 |       -126 |       -357 |     -2,296 |
+| build/CMakeFiles (Files)                                                                               |          3 |       -435 |          0 |        -42 |       -477 |
+| build/CMakeFiles/3.22.1                                                                                |          5 |     -1,337 |       -126 |       -306 |     -1,769 |
+| build/CMakeFiles/3.22.1 (Files)                                                                        |          3 |       -129 |          0 |        -44 |       -173 |
+| build/CMakeFiles/3.22.1/CompilerIdC                                                                    |          1 |       -610 |        -62 |       -132 |       -804 |
+| build/CMakeFiles/3.22.1/CompilerIdCXX                                                                  |          1 |       -598 |        -64 |       -130 |       -792 |
+| build/CMakeFiles/main.dir                                                                              |          3 |        -41 |          0 |         -9 |        -50 |
++--------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++--------------------------------------------------------------------------------------------------------+-------------+------------+------------+------------+------------+
+| filename                                                                                               | language    | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------------------------+-------------+------------+------------+------------+------------+
+| /home/admin/workspace/ai_speaker/build/.cmake/api/v1/query/client-vscode/query.json                    | JSON        |         -1 |          0 |          0 |         -1 |
+| /home/admin/workspace/ai_speaker/build/.cmake/api/v1/reply/cache-v2-fe3138d6be50029ffe04.json          | JSON        |     -1,227 |          0 |         -1 |     -1,228 |
+| /home/admin/workspace/ai_speaker/build/.cmake/api/v1/reply/cmakeFiles-v1-77ae35750466e95d015b.json     | JSON        |       -136 |          0 |         -1 |       -137 |
+| /home/admin/workspace/ai_speaker/build/.cmake/api/v1/reply/codemodel-v2-73dd7b92932421375d2b.json      | JSON        |        -60 |          0 |         -1 |        -61 |
+| /home/admin/workspace/ai_speaker/build/.cmake/api/v1/reply/directory-.-Debug-f5ebdc15457944623624.json | JSON        |        -14 |          0 |         -1 |        -15 |
+| /home/admin/workspace/ai_speaker/build/.cmake/api/v1/reply/index-2025-08-21T04-39-53-0020.json         | JSON        |       -132 |          0 |         -1 |       -133 |
+| /home/admin/workspace/ai_speaker/build/.cmake/api/v1/reply/target-main-Debug-88769ffae23d3790b698.json | JSON        |       -197 |          0 |         -1 |       -198 |
+| /home/admin/workspace/ai_speaker/build/.cmake/api/v1/reply/toolchains-v1-ed1272dfe360dea34308.json     | JSON        |       -103 |          0 |         -1 |       -104 |
+| /home/admin/workspace/ai_speaker/build/CMakeCache.txt                                                  | CMake Cache |       -313 |          0 |        -71 |       -384 |
+| /home/admin/workspace/ai_speaker/build/CMakeFiles/3.22.1/CMakeCCompiler.cmake                          | CMake       |        -55 |          0 |        -18 |        -73 |
+| /home/admin/workspace/ai_speaker/build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake                        | CMake       |        -64 |          0 |        -20 |        -84 |
+| /home/admin/workspace/ai_speaker/build/CMakeFiles/3.22.1/CMakeSystem.cmake                             | CMake       |        -10 |          0 |         -6 |        -16 |
+| /home/admin/workspace/ai_speaker/build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c                | C           |       -610 |        -62 |       -132 |       -804 |
+| /home/admin/workspace/ai_speaker/build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp          | C++         |       -598 |        -64 |       -130 |       -792 |
+| /home/admin/workspace/ai_speaker/build/CMakeFiles/CMakeDirectoryInformation.cmake                      | CMake       |        -12 |          0 |         -5 |        -17 |
+| /home/admin/workspace/ai_speaker/build/CMakeFiles/CMakeOutput.log                                      | Log         |       -381 |          0 |        -31 |       -412 |
+| /home/admin/workspace/ai_speaker/build/CMakeFiles/Makefile.cmake                                       | CMake       |        -42 |          0 |         -6 |        -48 |
+| /home/admin/workspace/ai_speaker/build/CMakeFiles/main.dir/DependInfo.cmake                            | CMake       |        -19 |          0 |         -6 |        -25 |
+| /home/admin/workspace/ai_speaker/build/CMakeFiles/main.dir/cmake_clean.cmake                           | CMake       |        -20 |          0 |         -2 |        -22 |
+| /home/admin/workspace/ai_speaker/build/CMakeFiles/main.dir/compiler_depend.ts                          | TypeScript  |         -2 |          0 |         -1 |         -3 |
+| /home/admin/workspace/ai_speaker/build/Makefile                                                        | Makefile    |       -177 |        -63 |        -77 |       -317 |
+| /home/admin/workspace/ai_speaker/build/cmake_install.cmake                                             | CMake       |        -46 |          0 |         -9 |        -55 |
+| /home/admin/workspace/ai_speaker/build/compile_commands.json                                           | JSON        |        -32 |          0 |          0 |        -32 |
+| Total                                                                                                  |             |     -4,251 |       -189 |       -521 |     -4,961 |
++--------------------------------------------------------------------------------------------------------+-------------+------------+------------+------------+------------+

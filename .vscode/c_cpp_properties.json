@@ -5,9 +5,11 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "${workspaceFolder}/include/**",
+                "${workspaceFolder}/server/inc/**",
                 "/usr/include",
                 "/usr/local/include",
-                "/usr/include/x86_64-linux-gnu"
+                "/usr/include/x86_64-linux-gnu",
+                "/usr/include/event2"
             ],
 
             "defines": [],

@@ -1,0 +1,73 @@
+Date : 2025-08-21 16:23:38
+Directory : /home/admin/workspace/ai_speaker
+Total : 34 files,  2467 codes, 125 comments, 539 blanks, all 3131 lines
+
+Languages
++--------------+------------+------------+------------+------------+------------+
+| language     | files      | code       | comment    | blank      | total      |
++--------------+------------+------------+------------+------------+------------+
+| C            |         15 |      1,277 |         57 |        267 |      1,601 |
+| C++          |          7 |        573 |         56 |         91 |        720 |
+| Markdown     |          3 |        551 |          0 |        145 |        696 |
+| Makefile     |          2 |         25 |          4 |         11 |         40 |
+| CMake        |          2 |         24 |          0 |         12 |         36 |
+| Shell Script |          3 |         17 |          8 |         11 |         36 |
+| Log          |          2 |          0 |          0 |          2 |          2 |
++--------------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                     | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                        |         34 |      2,467 |        125 |        539 |      3,131 |
+| . (Files)                                                |          6 |        601 |          9 |        169 |        779 |
+| include                                                  |          6 |        161 |          1 |         46 |        208 |
+| server                                                   |         13 |        622 |         59 |        108 |        789 |
+| server (Files)                                           |          4 |         16 |          3 |         10 |         29 |
+| server/inc                                               |          3 |         97 |          0 |         22 |        119 |
+| server/logs                                              |          2 |          0 |          0 |          2 |          2 |
+| server/src                                               |          4 |        509 |         56 |         74 |        639 |
+| src                                                      |          6 |      1,003 |         54 |        198 |      1,255 |
+| test                                                     |          3 |         80 |          2 |         18 |        100 |
++----------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------+--------------+------------+------------+------------+------------+
+| filename                                                 | language     | code       | comment    | blank      | total      |
++----------------------------------------------------------+--------------+------------+------------+------------+------------+
+| /home/admin/workspace/ai_speaker/API.md                  | Markdown     |        474 |          0 |         77 |        551 |
+| /home/admin/workspace/ai_speaker/CMakeLists.txt          | CMake        |         24 |          0 |         11 |         35 |
+| /home/admin/workspace/ai_speaker/Makefile                | Makefile     |          9 |          1 |          4 |         14 |
+| /home/admin/workspace/ai_speaker/README.md               | Markdown     |         77 |          0 |         67 |        144 |
+| /home/admin/workspace/ai_speaker/build.sh                | Shell Script |         10 |          3 |          2 |         15 |
+| /home/admin/workspace/ai_speaker/include/device.h        | C            |         17 |          0 |          5 |         22 |
+| /home/admin/workspace/ai_speaker/include/link.h          | C            |         26 |          0 |          8 |         34 |
+| /home/admin/workspace/ai_speaker/include/main.h          | C            |         15 |          0 |          7 |         22 |
+| /home/admin/workspace/ai_speaker/include/player.h        | C            |         50 |          1 |         14 |         65 |
+| /home/admin/workspace/ai_speaker/include/select.h        | C            |         19 |          0 |          5 |         24 |
+| /home/admin/workspace/ai_speaker/include/socket.h        | C            |         34 |          0 |          7 |         41 |
+| /home/admin/workspace/ai_speaker/init.sh                 | Shell Script |          7 |          5 |          8 |         20 |
+| /home/admin/workspace/ai_speaker/server/CMakeLists.txt   | CMake        |          0 |          0 |          1 |          1 |
+| /home/admin/workspace/ai_speaker/server/Makefile         | Makefile     |         16 |          3 |          7 |         26 |
+| /home/admin/workspace/ai_speaker/server/README.md        | Markdown     |          0 |          0 |          1 |          1 |
+| /home/admin/workspace/ai_speaker/server/inc/database.h   | C++          |         19 |          0 |          6 |         25 |
+| /home/admin/workspace/ai_speaker/server/inc/player.h     | C            |         33 |          0 |          6 |         39 |
+| /home/admin/workspace/ai_speaker/server/inc/server.h     | C++          |         45 |          0 |         10 |         55 |
+| /home/admin/workspace/ai_speaker/server/logs/player.log  | Log          |          0 |          0 |          1 |          1 |
+| /home/admin/workspace/ai_speaker/server/logs/server.log  | Log          |          0 |          0 |          1 |          1 |
+| /home/admin/workspace/ai_speaker/server/server_build.sh  | Shell Script |          0 |          0 |          1 |          1 |
+| /home/admin/workspace/ai_speaker/server/src/database.cpp | C++          |        142 |         12 |         15 |        169 |
+| /home/admin/workspace/ai_speaker/server/src/main.cpp     | C++          |          7 |          0 |          4 |         11 |
+| /home/admin/workspace/ai_speaker/server/src/player.cpp   | C++          |        103 |          6 |         14 |        123 |
+| /home/admin/workspace/ai_speaker/server/src/server.cpp   | C++          |        257 |         38 |         41 |        336 |
+| /home/admin/workspace/ai_speaker/src/device.c            | C            |         84 |          5 |         21 |        110 |
+| /home/admin/workspace/ai_speaker/src/link.c              | C            |        129 |          7 |         27 |        163 |
+| /home/admin/workspace/ai_speaker/src/main.c              | C            |         30 |          9 |         13 |         52 |
+| /home/admin/workspace/ai_speaker/src/player.c            | C            |        349 |         18 |         72 |        439 |
+| /home/admin/workspace/ai_speaker/src/select.c            | C            |        223 |          0 |         16 |        239 |
+| /home/admin/workspace/ai_speaker/src/socket.c            | C            |        188 |         15 |         49 |        252 |
+| /home/admin/workspace/ai_speaker/test/testapp.cpp        | C++          |          0 |          0 |          1 |          1 |
+| /home/admin/workspace/ai_speaker/test/testserver.c       | C            |         53 |          0 |         11 |         64 |
+| /home/admin/workspace/ai_speaker/test/volume.c           | C            |         27 |          2 |          6 |         35 |
+| Total                                                    |              |      2,467 |        125 |        539 |      3,131 |
++----------------------------------------------------------+--------------+------------+------------+------------+------------+

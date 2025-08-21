@@ -1,0 +1,59 @@
+"filename", "language", "C", "C++", "Markdown", "Makefile", "Log", "Shell Script", "CMake", "JSON", "CMake Cache", "TypeScript", "comment", "blank", "total"
+"/home/admin/workspace/ai_speaker/API.md", "Markdown", 0, 0, 474, 0, 0, 0, 0, 0, 0, 0, 0, 77, 551
+"/home/admin/workspace/ai_speaker/CMakeLists.txt", "CMake", 0, 0, 0, 0, 0, 0, 24, 0, 0, 0, 0, 11, 35
+"/home/admin/workspace/ai_speaker/Makefile", "Makefile", 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 1, 4, 14
+"/home/admin/workspace/ai_speaker/README.md", "Markdown", 0, 0, 77, 0, 0, 0, 0, 0, 0, 0, 0, 67, 144
+"/home/admin/workspace/ai_speaker/build.sh", "Shell Script", 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 3, 2, 15
+"/home/admin/workspace/ai_speaker/build/.cmake/api/v1/query/client-vscode/query.json", "JSON", 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"/home/admin/workspace/ai_speaker/build/.cmake/api/v1/reply/cache-v2-fe3138d6be50029ffe04.json", "JSON", 0, 0, 0, 0, 0, 0, 0, 1227, 0, 0, 0, 1, 1228
+"/home/admin/workspace/ai_speaker/build/.cmake/api/v1/reply/cmakeFiles-v1-77ae35750466e95d015b.json", "JSON", 0, 0, 0, 0, 0, 0, 0, 136, 0, 0, 0, 1, 137
+"/home/admin/workspace/ai_speaker/build/.cmake/api/v1/reply/codemodel-v2-73dd7b92932421375d2b.json", "JSON", 0, 0, 0, 0, 0, 0, 0, 60, 0, 0, 0, 1, 61
+"/home/admin/workspace/ai_speaker/build/.cmake/api/v1/reply/directory-.-Debug-f5ebdc15457944623624.json", "JSON", 0, 0, 0, 0, 0, 0, 0, 14, 0, 0, 0, 1, 15
+"/home/admin/workspace/ai_speaker/build/.cmake/api/v1/reply/index-2025-08-21T04-39-53-0020.json", "JSON", 0, 0, 0, 0, 0, 0, 0, 132, 0, 0, 0, 1, 133
+"/home/admin/workspace/ai_speaker/build/.cmake/api/v1/reply/target-main-Debug-88769ffae23d3790b698.json", "JSON", 0, 0, 0, 0, 0, 0, 0, 197, 0, 0, 0, 1, 198
+"/home/admin/workspace/ai_speaker/build/.cmake/api/v1/reply/toolchains-v1-ed1272dfe360dea34308.json", "JSON", 0, 0, 0, 0, 0, 0, 0, 103, 0, 0, 0, 1, 104
+"/home/admin/workspace/ai_speaker/build/CMakeCache.txt", "CMake Cache", 0, 0, 0, 0, 0, 0, 0, 0, 313, 0, 0, 71, 384
+"/home/admin/workspace/ai_speaker/build/CMakeFiles/3.22.1/CMakeCCompiler.cmake", "CMake", 0, 0, 0, 0, 0, 0, 55, 0, 0, 0, 0, 18, 73
+"/home/admin/workspace/ai_speaker/build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake", "CMake", 0, 0, 0, 0, 0, 0, 64, 0, 0, 0, 0, 20, 84
+"/home/admin/workspace/ai_speaker/build/CMakeFiles/3.22.1/CMakeSystem.cmake", "CMake", 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 6, 16
+"/home/admin/workspace/ai_speaker/build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c", "C", 610, 0, 0, 0, 0, 0, 0, 0, 0, 0, 62, 132, 804
+"/home/admin/workspace/ai_speaker/build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp", "C++", 0, 598, 0, 0, 0, 0, 0, 0, 0, 0, 64, 130, 792
+"/home/admin/workspace/ai_speaker/build/CMakeFiles/CMakeDirectoryInformation.cmake", "CMake", 0, 0, 0, 0, 0, 0, 12, 0, 0, 0, 0, 5, 17
+"/home/admin/workspace/ai_speaker/build/CMakeFiles/CMakeOutput.log", "Log", 0, 0, 0, 0, 381, 0, 0, 0, 0, 0, 0, 31, 412
+"/home/admin/workspace/ai_speaker/build/CMakeFiles/Makefile.cmake", "CMake", 0, 0, 0, 0, 0, 0, 42, 0, 0, 0, 0, 6, 48
+"/home/admin/workspace/ai_speaker/build/CMakeFiles/main.dir/DependInfo.cmake", "CMake", 0, 0, 0, 0, 0, 0, 19, 0, 0, 0, 0, 6, 25
+"/home/admin/workspace/ai_speaker/build/CMakeFiles/main.dir/cmake_clean.cmake", "CMake", 0, 0, 0, 0, 0, 0, 20, 0, 0, 0, 0, 2, 22
+"/home/admin/workspace/ai_speaker/build/CMakeFiles/main.dir/compiler_depend.ts", "TypeScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 1, 3
+"/home/admin/workspace/ai_speaker/build/Makefile", "Makefile", 0, 0, 0, 177, 0, 0, 0, 0, 0, 0, 63, 77, 317
+"/home/admin/workspace/ai_speaker/build/cmake_install.cmake", "CMake", 0, 0, 0, 0, 0, 0, 46, 0, 0, 0, 0, 9, 55
+"/home/admin/workspace/ai_speaker/build/compile_commands.json", "JSON", 0, 0, 0, 0, 0, 0, 0, 32, 0, 0, 0, 0, 32
+"/home/admin/workspace/ai_speaker/include/device.h", "C", 17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 22
+"/home/admin/workspace/ai_speaker/include/link.h", "C", 26, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 34
+"/home/admin/workspace/ai_speaker/include/main.h", "C", 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 22
+"/home/admin/workspace/ai_speaker/include/player.h", "C", 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 14, 65
+"/home/admin/workspace/ai_speaker/include/select.h", "C", 19, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 24
+"/home/admin/workspace/ai_speaker/include/socket.h", "C", 34, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 41
+"/home/admin/workspace/ai_speaker/init.sh", "Shell Script", 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 5, 8, 20
+"/home/admin/workspace/ai_speaker/server/CMakeLists.txt", "CMake", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1
+"/home/admin/workspace/ai_speaker/server/Makefile", "Makefile", 0, 0, 0, 16, 0, 0, 0, 0, 0, 0, 3, 7, 26
+"/home/admin/workspace/ai_speaker/server/README.md", "Markdown", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1
+"/home/admin/workspace/ai_speaker/server/inc/database.h", "C++", 0, 19, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 25
+"/home/admin/workspace/ai_speaker/server/inc/player.h", "C", 33, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 39
+"/home/admin/workspace/ai_speaker/server/inc/server.h", "C++", 0, 45, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 55
+"/home/admin/workspace/ai_speaker/server/logs/player.log", "Log", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1
+"/home/admin/workspace/ai_speaker/server/logs/server.log", "Log", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1
+"/home/admin/workspace/ai_speaker/server/server_build.sh", "Shell Script", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1
+"/home/admin/workspace/ai_speaker/server/src/database.cpp", "C++", 0, 142, 0, 0, 0, 0, 0, 0, 0, 0, 12, 15, 169
+"/home/admin/workspace/ai_speaker/server/src/main.cpp", "C++", 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 11
+"/home/admin/workspace/ai_speaker/server/src/player.cpp", "C++", 0, 103, 0, 0, 0, 0, 0, 0, 0, 0, 6, 14, 123
+"/home/admin/workspace/ai_speaker/server/src/server.cpp", "C++", 0, 257, 0, 0, 0, 0, 0, 0, 0, 0, 38, 41, 336
+"/home/admin/workspace/ai_speaker/src/device.c", "C", 84, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 21, 110
+"/home/admin/workspace/ai_speaker/src/link.c", "C", 129, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 27, 163
+"/home/admin/workspace/ai_speaker/src/main.c", "C", 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 13, 52
+"/home/admin/workspace/ai_speaker/src/player.c", "C", 349, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18, 72, 439
+"/home/admin/workspace/ai_speaker/src/select.c", "C", 223, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 239
+"/home/admin/workspace/ai_speaker/src/socket.c", "C", 188, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15, 49, 252
+"/home/admin/workspace/ai_speaker/test/testapp.cpp", "C++", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1
+"/home/admin/workspace/ai_speaker/test/testserver.c", "C", 53, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 64
+"/home/admin/workspace/ai_speaker/test/volume.c", "C", 27, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 6, 35
+"Total", "-", 1887, 1171, 551, 202, 381, 17, 292, 1902, 313, 2, 314, 1060, 8092

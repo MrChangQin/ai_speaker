@@ -30,7 +30,7 @@ void send_info2server(int sig) {
     // 释放
     json_object_put(SendObj);
 
-    alarm(5);
+    alarm(2);
 }
 
 void socket_send_data(struct json_object *obj) {
@@ -242,8 +242,9 @@ int init_socket() {
         g_maxfd = (g_maxfd < g_socket_fd) ? g_socket_fd : g_maxfd;
         FD_SET(g_socket_fd, &READSET);  // 添加到可读集合中
         // 定时信息上传
-        alarm(5);     //  SIGALRM 信号
+        // alarm(2);     //  SIGALRM 信号
         signal(SIGALRM, send_info2server);
+        send_info2server(SIGALRM);
         break;
     }
     return 0;

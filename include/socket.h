@@ -19,7 +19,7 @@
 #include <device.h>
 
 #define PORT        8000
-#define IP          "127.0.0.1"
+#define IP          "8.148.70.46"
 
 
 int init_socket();
