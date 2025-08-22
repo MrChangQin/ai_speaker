@@ -134,7 +134,8 @@ void stop_play() {
     kill(shm.child_pid, SIGUSR2);
 
     // 结束mplayer进程
-    write_fifo("stop\n");
+    // write_fifo("stop\n");
+    write_fifo("quit\n");
 
     // 回收子进程
     int status;
@@ -177,6 +178,9 @@ void next_play() {
 
         clear_link();
         get_music("random");
+
+        sleep(1);// 稳定很多
+
         start_play();
         if (g_suspend_flag == 1) {
             g_suspend_flag == 0;
