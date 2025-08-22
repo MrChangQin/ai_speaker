@@ -142,4 +142,13 @@ or
 ### 2.创建工程
 ![alt text](alias/image5.png)
 
-### 3.创建工程
+## 四、系统移植
+
+### 1.什么是系统移植
+![alt text](alias/image6.png)
+
+### 2. uboot移植
+
+### 3. linux内核移植
+
+### 3. 根文件系统构建
